@@ -1,6 +1,6 @@
 const CACHE = 'debtcollecter-shell-v1'
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(['/','/manifest.webmanifest','/icon.svg'])))
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(['/','/manifest.webmanifest','/debtcollector-logo.png','/debtcollector-icon.jpg'])))
   self.skipWaiting()
 })
 self.addEventListener('activate', event => {
