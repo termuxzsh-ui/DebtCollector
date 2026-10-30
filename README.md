@@ -25,7 +25,7 @@ DebtCollecter is a personal loan and collections workspace built with React, Typ
 1. Create a Supabase project and open **SQL Editor**.
 2. Run the entire [`supabase/schema.sql`](supabase/schema.sql) script. It creates all app tables, indexes, update triggers, payment and recurring-task triggers, per-user RLS policies, and the private `loan-attachments` bucket policies.
 3. In Supabase **Authentication → URL Configuration**, set the local redirect URL to `http://localhost:5173/**`. Add the production Netlify URL after deployment.
-4. Copy `.env.example` to `.env` and set your project URL and **anon/public** key:
+4. Copy `.env` to `.env` and set your project URL and **anon/public** key:
 
    ```env
    VITE_SUPABASE_URL=https://YOUR_PROJECT_ID.supabase.co
